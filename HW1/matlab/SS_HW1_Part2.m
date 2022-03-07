@@ -72,10 +72,10 @@ function retval = SS_HW1_Part2 ()
   while index < length(t3) +1
        if t3(index) >= -2 
          if t3(index) == 0 
-           X3(index) = power(2.71828,t3(index)/3) + 2;
+           X3(index) = power(2.71828,t3(index)*3) + 2;
 
          else 
-           X3(index) = power(2.71828,t3(index)/3);
+           X3(index) = power(2.71828,t3(index)*3);
 
          end
        else

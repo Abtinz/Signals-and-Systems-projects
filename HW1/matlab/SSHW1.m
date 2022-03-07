@@ -71,10 +71,10 @@ function retval = SSHW1 ()
   
        if t3(index) >= -2 
          if t3(index) == 0 
-           X3(index) = power(2.71828,t3(index)/3) + 2;
+           X3(index) = power(2.71828,t3(index)*3) + 2;
            X3_Plot(index) = t3(index);
          else 
-           X3(index) = power(2.71828,t3(index)/3);
+           X3(index) = power(2.71828,t3(index)*3);
            X3_Plot(index) = t3(index);
          end
        else
@@ -123,7 +123,7 @@ endwhile
   t5_plot = []
   while index < length(t5) +1
  
-       X5(index) = cos(t5(index)/3);
+       X5(index) = cos(t5(index)*3);
        t5_plot(index) = t5(index);
    index -=-1;
   
@@ -144,7 +144,7 @@ endwhile
   t7_plot = []
   while index < length(t7) +1
 
-       X7(index) = cos(t7(index)/3*pi);
+       X7(index) = cos(t7(index)*3*pi);
        t7_plot(index) = t7(index);
 
    index -=-1;
